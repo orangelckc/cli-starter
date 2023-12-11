@@ -4,12 +4,12 @@
 ## vue3-admin 起手模版
 
 ### 技术栈
--[x] vue3
--[x] vue-router4
--[x] vueuse
--[x] pinia+pinia-plugin-persistedstate
--[x] axios
--[x] element-plus
--[x] eslint
--[x] dayjs
--[x] unocss
+- [x] vue3
+- [x] vue-router4
+- [x] vueuse
+- [x] pinia+pinia-plugin-persistedstate
+- [x] axios
+- [x] element-plus
+- [x] eslint
+- [x] dayjs
+- [x] unocss
