@@ -1,0 +1,73 @@
+/* stylelint-disable scss/no-global-function-names */
+/** Layout 相关 */
+.app-wrapper {
+  color: $font-color;
+
+  // 侧边栏
+  .sidebar-container {
+    .sidebar-logo-container {
+      background-color: lighten($theme-bg-color, 2%) !important;
+    }
+
+    .el-menu {
+      background-color: lighten($theme-bg-color, 4%) !important;
+
+      .el-menu-item {
+        background-color: lighten($theme-bg-color, 4%) !important;
+
+        &.is-active, &:hover {
+          color: $active-font-color !important;
+          background-color: lighten($theme-bg-color, 8%) !important;
+        }
+      }
+    }
+
+    .el-sub-menu__title {
+      background-color: lighten($theme-bg-color, 4%) !important;
+    }
+  }
+
+  // 顶部导航栏
+  .navigation-bar {
+    background-color: $theme-bg-color;
+
+    .right-menu {
+      .svg-icon {
+        color: $font-color;
+      }
+    }
+  }
+
+  // TagsView
+  .tags-view-container {
+    background-color: $theme-bg-color !important;
+    border-bottom: 1px solid lighten($theme-bg-color, 10%) !important;
+
+    .tags-view-item {
+      color: $font-color !important;
+      background-color: $theme-bg-color !important;
+      border: 1px solid $border-color !important;
+
+      &.active {
+        color: $active-font-color !important;
+        background-color: $theme-color !important;
+        border-color: $border-color !important;
+      }
+    }
+    // 右键菜单
+    .contextmenu {
+      color: $font-color;
+      background-color: lighten($theme-bg-color, 8%);
+
+      li:hover {
+        color: $active-font-color;
+        background-color: lighten($theme-bg-color, 16%);
+      }
+    }
+  }
+
+  // 右侧设置面板
+  .handle-button {
+    background-color: lighten($theme-bg-color, 20%) !important;
+  }
+}

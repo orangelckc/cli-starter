@@ -1,0 +1,57 @@
+{
+  "name": "@btrl/admin",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "pnpm simple-git-hooks",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.7.0",
+    "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
+    "element-plus": "^2.4.3",
+    "nprogress": "^0.2.0",
+    "path-browserify": "^1.0.1",
+    "path-to-regexp": "^6.2.1",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.0",
+    "screenfull": "^6.0.2",
+    "simple-git-hooks": "^2.9.0",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.41.4",
+    "@iconify-json/ep": "^1.1.14",
+    "@types/node": "^20.10.4",
+    "@types/nprogress": "^0.2.3",
+    "@types/path-browserify": "^1.0.2",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@unocss/eslint-config": "^0.58.0",
+    "@unocss/preset-icons": "^0.58.0",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "@vue-macros/volar": "^0.18.0",
+    "@vue/runtime-core": "^3.3.11",
+    "eslint": "^8.55.0",
+    "lint-staged": "^15.2.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.3",
+    "unocss": "^0.58.0",
+    "unplugin-auto-import": "^0.17.2",
+    "unplugin-vue-components": "^0.26.0",
+    "unplugin-vue-define-options": "^1.4.1",
+    "vite": "^5.0.7",
+    "vite-plugin-vue-devtools": "1.0.0-rc.7",
+    "vue-tsc": "^1.8.25"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}
