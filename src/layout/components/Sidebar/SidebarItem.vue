@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import path from 'path-browserify'
-import { type PropType } from 'vue'
-import { type RouteRecordRaw } from 'vue-router'
 
 import SidebarItemLink from './SidebarItemLink.vue'
+
+import type { PropType } from 'vue'
+import type { RouteRecordRaw } from 'vue-router'
 
 import { getIcon } from '@/config/icons'
 import { isExternal } from '@/utils/validate'

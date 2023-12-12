@@ -1,6 +1,6 @@
 // TODO 统一到store逻辑里
 /** 统一处理 localStorage */
-import { type ThemeName } from '@/hooks/useTheme'
+import type { ThemeName } from '@/hooks/useTheme'
 
 const SYSTEM_NAME = !import.meta.env.VITE_APP_SYSTEM_NAME || 'vue-admin'
 

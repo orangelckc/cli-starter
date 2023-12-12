@@ -139,7 +139,7 @@ export async function resetPassword(row: IAdminData) {
   if (!confirm)
     return
 
-  const { value } = (confirm as MessageBoxData)
+  const { value } = confirm as MessageBoxData
 
   if (!value || value.length < 8) {
     ElMessage.warning('新密码最少8位')

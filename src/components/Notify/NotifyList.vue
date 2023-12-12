@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { type PropType } from 'vue'
-
-import { type IListItem } from './data'
+import type { IListItem } from './data'
+import type { PropType } from 'vue'
 
 const props = defineProps({
   list: {
