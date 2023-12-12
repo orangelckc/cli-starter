@@ -1,0 +1,5 @@
+export const PRIMARY_COLOR = '#19AD19'
+export const SECONDARY_COLOR = '#FF9933'
+export const DISABLED_COLOR = '#DEDEDE'
+export const DANGER_COLOR = '#FF5A5A'
+export const DEFAULT_COLOR = '#333333'

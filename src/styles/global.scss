@@ -1,0 +1,10 @@
+/* stylelint-disable selector-type-no-unknown */
+page {
+  @apply min-h-screen text-default text-base font-normal bg-[#FAFAFA];
+
+  font-family: "PingFang SC-Regular", "PingFang SC", sans-serif;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

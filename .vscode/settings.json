@@ -1,0 +1,33 @@
+{
+  "prettier.enable": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.stylelint": "always"
+  },
+
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "vue"
+  ],
+  /**
+   * 解决 unocss @apply 警告问题
+   * @see https://github.com/tailwindlabs/tailwindcss/discussions/5258#discussioncomment-1979394
+   */
+  "scss.lint.unknownAtRules": "ignore"
+}
