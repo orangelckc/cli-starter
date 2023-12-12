@@ -1,0 +1,7 @@
+export * as AuthController from './modules/authController'
+export * as AdminController from './modules/adminController'
+export * as DeptController from './modules/deptController'
+export * as RoleController from './modules/roleController'
+export * as MenuController from './modules/menuController'
+export * as InterfaceController from './modules/interfaceController'
+export * as FileController from './modules/fileController'
