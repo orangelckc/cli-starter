@@ -12,3 +12,5 @@
 - [x] redis
 - [x] jwt
 - [x] logger
+- [x] ali-oss
+- [x] apifox (api文档管理)
