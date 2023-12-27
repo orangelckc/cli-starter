@@ -1,0 +1,50 @@
+{
+  "name": "vue3-electron-starter",
+  "version": "1.0.0",
+  "description": "vue3-electron 起手模版",
+  "author": "orangelckc <https://github.com/orangelckc>",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build && electron-builder",
+    "preview": "vite preview",
+    "lint": "eslint . --fix && stylelint src/**/*.{vue,css,scss} --fix",
+    "prepare": "pnpm simple-git-hooks"
+  },
+  "dependencies": {
+    "element-plus": "^2.4.4",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.1",
+    "@btrl/stylelint-config": "^1.0.3",
+    "@unocss/reset": "^0.58.1",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.4",
+    "eslint": "^8.56.0",
+    "lint-staged": "^15.2.0",
+    "sass": "^1.69.5",
+    "simple-git-hooks": "^2.9.0",
+    "stylelint": "^15.5.0",
+    "typescript": "^5.2.2",
+    "unocss": "^0.58.1",
+    "unplugin-auto-import": "^0.17.3",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^4.4.9",
+    "vite-plugin-electron": "^0.14.0",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vite-plugin-vue-devtools": "1.0.0-rc.8",
+    "vue-tsc": "^1.8.8"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{vue,ts,js,json}": "eslint --fix",
+    "*.{vue,css,scss}": "stylelint --fix"
+  }
+}
