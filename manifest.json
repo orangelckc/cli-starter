@@ -1,0 +1,33 @@
+{
+  "{{chrome}}.manifest_version": 3,
+  "{{firefox}}.manifest_version": 2,
+  "name": "vue3-chrome-extension-starter",
+  "version": "1.0.0",
+  "description": "Vue3 Chrome 插件起手摸板",
+  "icons": {
+    "16": "icon/16.png",
+    "48": "icon/48.png",
+    "128": "icon/128.png"
+  },
+  "{{chrome}}.action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "{{firefox}}.browser_action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "src/content-script/index.ts"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "{{firefox}}.<all_urls>",
+    "{{chrome}}.activeTab"
+  ]
+}
