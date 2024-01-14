@@ -1,0 +1,33 @@
+{
+  "name": "vite-ts-starter",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/apis.umd.js",
+  "module": "dist/apis.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist/*"],
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint . --fix",
+    "test": "vitest --coverage",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.2",
+    "@vitest/coverage-v8": "^1.2.0",
+    "eslint": "^8.56.0",
+    "lint-staged": "^15.2.0",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0",
+    "vitest": "^1.2.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,json}": "eslint --fix"
+  }
+}
