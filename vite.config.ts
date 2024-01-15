@@ -5,7 +5,9 @@ import pkg from './package.json'
 
 export default defineConfig({
   plugins: [dts({
-    exclude: ['**/*.test.ts', 'node_modules/**/*'],
+    include: ['src/**/*'],
+    exclude: ['src/**/*.test.ts'],
+    copyDtsFiles: true,
   })],
   build: {
     lib: {

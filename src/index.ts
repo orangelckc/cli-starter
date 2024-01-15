@@ -1,9 +1,12 @@
+import type { Types } from './types/index.d'
+
 /**
  * 测试公共函数
- * @param {string} name 姓名
+ * @param {Types.IHello} param 问候参数
  */
-function greeting(name: string) {
-  return `Greetings: Hello ${name || 'Someone'}`
+function greeting(param: Types.IHello) {
+  return `Greetings: Hello ${param.name || 'Someone'}`
 }
 
 export { greeting }
+export type { Types }

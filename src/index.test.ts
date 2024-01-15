@@ -4,17 +4,17 @@ import { greeting } from './index'
 
 describe('问候函数', () => {
   it('应返回一个问候消息', () => {
-    const result = greeting('John')
+    const result = greeting({ name: 'John' })
     expect(result).toBe('Greetings: Hello John')
   })
 
   it('对于不同的名字，应返回不同的问候消息', () => {
-    const result = greeting('Jane')
+    const result = greeting({ name: 'Jane' })
     expect(result).toBe('Greetings: Hello Jane')
   })
 
   it('应处理空字符串输入', () => {
-    const result = greeting('')
+    const result = greeting({ name: '' })
     expect(result).toBe('Greetings: Hello Someone')
   })
 })
